@@ -360,6 +360,22 @@ open-claude-cowork/
 
 ---
 
+## Web Download Portal
+
+This repo includes a lightweight static download portal in `docs/` so you can host a macOS
+download page on GitHub Pages or Netlify.
+
+**Quick setup (GitHub Pages):**
+1. Push the repo to GitHub.
+2. In **Settings → Pages**, set the source to **Deploy from a branch** and select
+   `main` with the `/docs` folder.
+3. The portal will be available at your GitHub Pages URL and links to the latest release.
+
+**Update the download link:**
+- Edit `docs/index.html` to point to your preferred release asset or download URL.
+
+---
+
 <p align="center">
   Built with Claude Code and Composio
 </p>
