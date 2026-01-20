@@ -1,12 +1,14 @@
 :root {
-  color-scheme: dark;
-  --bg: #0c0f1a;
-  --bg-soft: #151a2c;
-  --text: #f5f7ff;
-  --muted: #b0b7d5;
-  --accent: #7c5cff;
-  --accent-2: #3ddc97;
-  --border: rgba(255, 255, 255, 0.08);
+  color-scheme: light;
+  --bg: #f7f8fc;
+  --bg-soft: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #5b5bfd;
+  --accent-2: #0ea5e9;
+  --border: rgba(15, 23, 42, 0.12);
+  --shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+  --shadow-soft: 0 12px 24px rgba(15, 23, 42, 0.06);
 }
 
 * {
@@ -28,8 +30,8 @@ a {
 }
 
 .hero {
-  background: radial-gradient(circle at top, rgba(124, 92, 255, 0.2), transparent 55%),
-    linear-gradient(180deg, #0c0f1a 0%, #0c0f1a 60%, #11162b 100%);
+  background: radial-gradient(circle at top, rgba(14, 165, 233, 0.15), transparent 55%),
+    linear-gradient(180deg, #f7f8fc 0%, #fdfdff 65%, #eef1ff 100%);
   padding: 48px 7vw 80px;
   border-bottom: 1px solid var(--border);
 }
@@ -49,6 +51,10 @@ a {
 .nav-link {
   font-size: 0.95rem;
   color: var(--muted);
+}
+
+.nav-link:hover {
+  color: var(--accent);
 }
 
 .hero-content {
@@ -90,28 +96,29 @@ h1 {
   font-weight: 600;
   font-size: 0.95rem;
   border: 1px solid transparent;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
 .button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--shadow-soft);
 }
 
 .primary {
   background: var(--accent);
   color: #fff;
+  box-shadow: var(--shadow-soft);
 }
 
 .secondary {
-  background: transparent;
-  border: 1px solid var(--border);
+  background: #fff;
+  border: 1px solid rgba(91, 91, 253, 0.25);
   color: var(--text);
 }
 
 .tertiary {
-  background: rgba(124, 92, 255, 0.12);
-  color: var(--text);
+  background: rgba(14, 165, 233, 0.12);
+  color: #0f172a;
 }
 
 .meta {
@@ -121,7 +128,7 @@ h1 {
 
 main {
   padding: 64px 7vw 40px;
-  background: #11162b;
+  background: var(--bg);
 }
 
 .section {
@@ -154,6 +161,7 @@ main {
   border: 1px solid var(--border);
   padding: 18px;
   border-radius: 16px;
+  box-shadow: var(--shadow-soft);
 }
 
 .cards h3 {
