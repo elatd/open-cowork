@@ -5,11 +5,25 @@
   "scripts": {
     "dev": "NODE_ENV=development electron .",
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder",
+    "build:mac": "electron-builder --mac dmg"
   },
   "author": "",
   "license": "ISC",
   "description": "Electron chat app with Claude Agent SDK and Opencode SDK support",
+  "build": {
+    "appId": "com.composio.openclaudecowork",
+    "productName": "Open Claude Cowork",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ]
+    }
+  },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "^0.2.7",
     "@opencode-ai/sdk": "latest",
@@ -19,6 +33,7 @@
   },
   "devDependencies": {
     "electron": "^39.2.7",
+    "electron-builder": "^24.13.3",
     "electron-reload": "^2.0.0-alpha.1"
   }
 }
