@@ -300,6 +300,7 @@ open-claude-cowork/
 | `npm start` | Start the Electron app |
 | `npm run dev` | Start in development mode with live reload |
 | `cd server && npm start` | Start the backend server |
+| `npm run build:mac` | Build the macOS `.dmg` via electron-builder (requires macOS) |
 
 ---
 
