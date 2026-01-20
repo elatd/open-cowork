@@ -303,6 +303,16 @@ open-claude-cowork/
 
 ---
 
+## Web Portal (Download Page)
+
+A simple macOS download portal is available in `web-portal/`. Host it on GitHub Pages, Netlify, or Render Static and point the download button to your release assets.
+
+1. Upload a signed macOS `.dmg` to GitHub Releases.
+2. Deploy the `web-portal/` folder as a static site.
+3. Update the download link in `web-portal/index.html` to your release URL if needed.
+
+---
+
 ## Troubleshooting
 
 **"Failed to connect to backend"**
