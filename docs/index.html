@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Open Claude Cowork — macOS App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">Open Claude Cowork</div>
+        <a class="nav-link" href="https://github.com/ComposioHQ/open-claude-cowork" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
+      </nav>
+      <div class="hero-content">
+        <h1>Run Open Claude Cowork on your Mac</h1>
+        <p class="subtitle">
+          Download the desktop app, install in minutes, and start chatting with Claude + Composio tools.
+        </p>
+        <div class="cta-group">
+          <a
+            class="btn primary"
+            href="https://github.com/ComposioHQ/open-claude-cowork/releases/latest"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download the macOS app
+          </a>
+          <a class="btn secondary" href="#install">Install steps</a>
+        </div>
+        <div class="hero-note">
+          Requires macOS 12+ • Apple Silicon & Intel supported
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="card-grid">
+        <article class="card">
+          <h2>1. Download</h2>
+          <p>
+            Open the latest release and download the <strong>.dmg</strong> file for your Mac.
+          </p>
+        </article>
+        <article class="card">
+          <h2>2. Install</h2>
+          <p>
+            Open the DMG and drag <strong>Open Claude Cowork</strong> into Applications.
+          </p>
+        </article>
+        <article class="card">
+          <h2>3. Configure</h2>
+          <p>
+            Add your API keys in <code>.env</code> and start the backend server locally.
+          </p>
+        </article>
+      </section>
+
+      <section class="install" id="install">
+        <h2>macOS install steps</h2>
+        <ol>
+          <li>
+            Download the latest DMG from the
+            <a href="https://github.com/ComposioHQ/open-claude-cowork/releases/latest" target="_blank" rel="noreferrer">
+              GitHub releases page
+            </a>.
+          </li>
+          <li>Open the DMG and drag the app into <strong>Applications</strong>.</li>
+          <li>
+            If you see a Gatekeeper warning, open <strong>System Settings → Privacy &amp; Security</strong> and click
+            <strong>Open Anyway</strong>.
+          </li>
+          <li>Start the backend server with <code>cd server && npm start</code>.</li>
+          <li>Launch the desktop app from Applications.</li>
+        </ol>
+      </section>
+
+      <section class="help">
+        <h2>Need help?</h2>
+        <p>
+          Check the <a href="https://github.com/ComposioHQ/open-claude-cowork#troubleshooting">Troubleshooting</a> section
+          in the README or open an issue on GitHub.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <span>Built with Claude Code + Composio</span>
+    </footer>
+  </body>
+</html>

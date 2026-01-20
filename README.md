@@ -371,6 +371,18 @@ A simple macOS download portal is available in `web-portal/`. Host it on GitHub 
 
 ---
 
+## Web Portal (macOS Download Page)
+
+Use the static web portal in `docs/` to host a download page for macOS builds:
+
+1. Build and publish a macOS DMG to GitHub Releases.
+2. Enable GitHub Pages to serve the `docs/` folder.
+3. Update the download link in `docs/index.html` if you host releases elsewhere.
+
+The portal includes install steps and Gatekeeper guidance for macOS users.
+
+---
+
 <p align="center">
   Built with Claude Code and Composio
 </p>
